@@ -14,11 +14,24 @@ function matchfinder(words, eat){
     });
 
 function displayMatch() {
-    console.log(this.value);
+    const matchArray = matchfinder(this.value, eat);
+    const html = matchArray.map(place => {
+        const regex = new RegExp(this.value, 'gi');
+        const placeName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
+        const catName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
+        return `
+        <li>
+        <span class="name">${placeName}, ${catName}</span>
+        < span class="city">${place.city}</span>
+        </li>
+        `;
+    }).join('');
+    suggestions.innerHTML = html;
 }
 const searchInput = document.querySelector('.textinput');
 const suggestions = document.querySelector('.suggestions');
 
-searchInput.addEventListener('change', matchfinder);
+searchInput.addEventListener('change', displayMatch);
+searchInput.addEventListener('keyup', displayMatch);
 
 }
