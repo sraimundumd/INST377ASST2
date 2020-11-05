@@ -1,87 +1,29 @@
 body {
-    background: 
+  background: beige;
 }
 
 .wrapper {
-    display:
-    flex-direction:
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-    min-height:
+  min-height: 100%;
 }
 
 .header {
-    color:
-    display:
-    flex-direction:
-    flex-wrap:
-    justify-content:
-    align-items:
-    margin:
-    margin-bottom:
-    padding:
-    border-radius:
+  color: lightcoral;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
-
-.suggestions {
-
-}
-
-.flex-outer li,
-.flex-inner {
-  display:
-  flex-wrap:
-  align-items:
-  flex-direction:
-}
-
-.flex-outer > li > label,
-.flex-outer li p {
-  flex:
-  max-width: 
-  padding:
-}
- 
-.flex-outer > li > label + *,
-.flex-inner {
-  flex:
-}
-
-.flex-inner li {
-  width: 
-  padding: 
-  display: 
-  flex-direction:
-}
-
-.flex-inner input {
-  margin-right: 
-}
-
-.flex-inner {
-  padding:
-  justify-content: 
-}
-
-.flex-outer {
-  width:
-  padding: 
-  margin:
 
 h1 {
-  margin:
-  padding: 
-  min-height: 
-  background-color: 
-  color: 
-  display: 
-  
-  align-items: 
-  justify-content: 
-  font-weight: 
-  font-size: 
-  text-transform: 
-  flex-wrap: 
-  border-radius:
+  font-size: 25px;
 }
