@@ -11,19 +11,19 @@ fetch(endpoint)
 
 function matchfinder(words, eat){
     return eat.filter(place => { 
-        const regex = new RegExp(words, 'gi');
+        const regex = new RegExp(words,'gi');
         return place.name.match(regex) || place.category.match(regex)
     })};
     
 function displayMatch() {
-    const matchArray = matchfinder(this.value, eat);
+    const matchArray = matchfinder(this.value,eat);
     const html = matchArray.map(place => {
-        const regex = new RegExp(this.value, 'gi');
+        const regex = new RegExp(this.value,'gi');
         const placeName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
         const catName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
         return `
         <li>
-        <span class="name">${placeName}, ${catName}</span>
+        <span class="name">${placeName},${catName}</span>
         <span class="city">${place.city}</span>
         </li>
         `;
