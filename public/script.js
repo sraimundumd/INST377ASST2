@@ -24,7 +24,7 @@ function displayMatch() {
         return `
         <li>
         <span class="name">${placeName}, ${catName}</span>
-        < span class="city">${place.city}</span>
+        <span class="city">${place.city}</span>
         </li>
         `;
     }).join('');
