@@ -13,7 +13,7 @@ function matchfinder(words, eat){
     return eat.filter(place => { 
         const regex = new RegExp(words, 'gi');
         return place.name.match(regex) || place.category.match(regex)
-    });
+    })};
     
 function displayMatch() {
     const matchArray = matchfinder(this.value, eat);
