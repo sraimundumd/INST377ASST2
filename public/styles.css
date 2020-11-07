@@ -1,5 +1,5 @@
 body {
-  background: beige;
+  background: black;
 }
 
 .wrapper {
@@ -31,7 +31,7 @@ body {
 
 h1 {
   font-size: 30px;
-  -webkit-text-stroke: .6px black;
+  -webkit-text-stroke: .4px beige;
   -webkit-text-fill-color: lightcoral;
 }
 
