@@ -19,12 +19,12 @@ function displayMatch() {
     const matchArray = matchfinder(this.value,eat);
     let html = matchArray.map(place => {
         const regex = new RegExp(this.value,'gi');
-        const placeName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
-        const catName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
+       // const placeName = place.name.replace(regex, `<span class="hl">${this.value}</span>`);
+       // const catName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
         return `
         <li>
-        <span class="name">${placeName} || </span>
-        <span class="category">${catName} || </span>
+        <span class="name">${place.name} || </span>
+        <span class="category">${place.category} || </span>
         <span class="city">${place.city}</span>
         </li>
         `;
